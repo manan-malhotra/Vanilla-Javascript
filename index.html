@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman</h1>
+        <p>Find the hidden word - Enter a word</p>
+        <div class="container-game">
+            <div class="container-figure">
+                <svg height="310" width="200">
+                <!-- Structure -->
+                <line x1="30" y1="20" x2="30" y2="300"/>
+                <line x1="10" y1="300" x2="50" y2="300"/>
+                <line x1="30" y1="20" x2="120" y2="20"/>
+                <line x1="120" y1="20" x2="120" y2="50"/>
+                <!-- Face -->
+                <circle cx="120" cy="70" r="20" class="figure-part"/>
+                <!-- Body -->
+                <line x1="120" y1="90" x2="120" y2="180" class="figure-part"/>
+                <!-- Arms -->
+                <line x1="120" y1="110" x2="100" y2="140" class="figure-part"/>
+                <line x1="120" y1="110" x2="140" y2="140" class="figure-part"/>
+                <!-- Legs -->
+                <line x1="120" y1="180" x2="100" y2="220" class="figure-part"/>
+                <line x1="120" y1="180" x2="140" y2="220" class="figure-part"/>
+            </svg>
+        </div>
+            <div class="container-wrong">
+                <div id="wrong">
+               
+                </div>
+            </div>
+            <div class="word" id="word">
+            </div>
+        </div>
+<!-- Final msg -->
+        <div class="container-popup" id="popup">
+            <div class="message">
+                <h2 id="final-message"></h2>
+                <button id="play-button">Play Again</button>
+            </div>
+        </div>
+        <!-- Notification -->
+        <div class="container-notification " id="notification">
+            <p>You have already entered this letter</p>
+        </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

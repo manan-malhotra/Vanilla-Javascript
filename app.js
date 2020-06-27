@@ -43,7 +43,7 @@ function showLoading() {
 			page++;
 			showPost();
 		}, 300);
-	}, 500);
+	}, 1000);
 }
 // Filter
 function filterPost(e) {

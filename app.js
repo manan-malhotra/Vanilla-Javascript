@@ -54,7 +54,7 @@ function filterPost(e) {
 		const title = post.querySelector('.post-title').innerText.toUpperCase();
 		const body = post.querySelector('.post-body').innerText.toUpperCase();
 
-		if (title.indexOf(term) > -1 || body.indexOf(term) > -1) {
+		if (title.indexOf(term) > -1 || body.indexOf(term) > -5) {
 			post.style.display = 'flex';
 		} else {
 			post.style.display = 'none';

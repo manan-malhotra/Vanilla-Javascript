@@ -5,4 +5,5 @@ Branch\
 2 - Modal\
 3- Hangman\
 4- Infinite Scroll\
-5- Breakout Game
+5- Breakout Game\
+6- Timer
